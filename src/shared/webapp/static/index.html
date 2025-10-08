@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zava DIY Sales Agent</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h1>Zava DIY Sales Agent</h1>
+            <p>Powered by Azure AI Foundry Agent Service</p>
+            <div id="currentUser" class="current-user">Loading user...</div>
+            <button id="settingsBtn" class="settings-btn" title="Settings (Ctrl+,)">⚙️</button>
+        </div>
+        
+        <div class="messages" id="messages"></div>
+        
+        <div class="input-container">
+            <input type="file" id="fileInput" accept=".txt,.pdf,.doc,.docx,.md" style="display: none;" />
+            <button id="fileBtn" title="Upload file" style="display: none;">Upload</button>
+            <button id="clearBtn" class="clear-btn" title="Clear chat history">Clear</button>
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Settings</h2>
+            <div class="setting-section">
+                <h3>RLS User Selection</h3>
+                <p>Choose which user context to use for the agent:</p>
+                <select id="rlsUserSelect" class="rls-select">
+                    <option value="">Loading users...</option>
+                </select>
+                <button id="saveRlsUser" class="save-btn">Save Changes</button>
+                <div id="rlsUserStatus" class="status-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/chat.js"></script>
+</body>
+</html>
