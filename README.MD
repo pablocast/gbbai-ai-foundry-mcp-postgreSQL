@@ -75,3 +75,21 @@ Open your web browser and navigate to the frontend application. Start asking que
 <p align="center">
 <img src="img/zava-diy-screenshot-1.png" width="1200"/>
 </p>
+
+### 🗑️ Delete resources
+
+To delete the Azure resources:
+
+1. Visit the Azure Portal
+2. Click **Resource groups**
+3. Click on your resource group **rg-agent-workshop-****
+4. Click **Delete Resource group**
+5. In the field at the bottom "Enter resource group name to confirm deletion" enter **rg-agent-workshop-****
+6. Click **Delete**
+7. At the Delete Confirmation prompt, click **"Delete"**
+
+Then cleanup the resources with the script:
+
+    ```bash
+    bash infra/cleanup-deleted-resources.sh
+    ```
