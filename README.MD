@@ -89,7 +89,6 @@ To delete the Azure resources:
 7. At the Delete Confirmation prompt, click **"Delete"**
 
 Then cleanup the resources with the script:
-
-    ```bash
-    bash infra/cleanup-deleted-resources.sh
-    ```
+```bash
+bash infra/cleanup-deleted-resources.sh
+```
