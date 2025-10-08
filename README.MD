@@ -1,8 +1,4 @@
-<p align="center">
-<img src="img/Azure-AI-Studio.png" alt="decorative banner" width="1200"/>
-</p>
-
-# 🔥Azure AI Foundry with Model Context Protocol and PostgreSQL
+# <img src="img/Azure-AI-Studio.png" alt="Azure Foundry" style="width:30px;height:30px;"/> Azure AI Foundry with Model Context Protocol and PostgreSQL
 
 ### 📋 Description
 
